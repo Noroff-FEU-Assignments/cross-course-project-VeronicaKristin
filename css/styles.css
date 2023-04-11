@@ -44,8 +44,8 @@ p {
 }
 
 .container {
-    display: flexbox;
-    flex-wrap: wrap;
+    border: 1px solid #D9D9D9;
+    padding: 20px;
 }
    
 .cover {
@@ -55,6 +55,11 @@ p {
 .top-sellers {
     display: flexbox;
     flex-flow: row;
+}
+
+.form {
+    display: flexbox;
+    flex-wrap: wrap;
 }
 footer {
     background-color: #D9D9D9;
