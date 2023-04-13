@@ -1,67 +1,12 @@
 body {
-    background-color: #11001C;
-    font-family: 'roboto';
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 5px;
+    font-family: "Roboto";
 }
 
-h2 {
-    color: #D9D9D9;
+h1, h2{
 
 }
 
-p {
-    color: #D9D9D9;
+nav li {
+    display: inline-block;
+    padding: 0px;
 }
-
-.logo {
-   max-width: 200px; 
-}
-
-.topnav {
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    boarder: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-}
-
-.container {
-    border: 1px solid #D9D9D9;
-    padding: 20px;
-}
-   
-.cover {
-    max-width: 400px;
-}
-
-.top-sellers {
-    display: flexbox;
-    flex-flow: row;
-}
-
-.form {
-    display: flexbox;
-    flex-wrap: wrap;
-}
-footer {
-    background-color: #D9D9D9;
-}
-
