@@ -172,3 +172,10 @@ footer p, a {
     flex: 1;
 }
 
+@media (min-width: 600px) and (max-width: 1200px) { 
+    .top-sellers {
+        flex-direction: column;
+    }
+}
+
+/*mostly used resorses on moodle. with a little help from w3schools.com*/
