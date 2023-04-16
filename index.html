@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device.widt, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Buy and sell your videogames online at game hub"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,53 +12,108 @@
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo"><h1>Game Hub</h1><h2>The universe of games</h2></a>
+      <a href="index.html">Game hub <br>The universe of games</a>
       <nav>
         <ul>
-        <li><input type="text" placeholder="Search.."></li>
-        <li><a> <img src="images/profile.png" alt="My profile"></a></li>
-        <li><a href="cart.html" class="cart"> <img src="images/cart.png" alt="cart"></a></li>
+          <li><input type="text" placeholder="Search.."></li>
+          <li><img src="images/profile.png" alt="My profile"></li>
+          <li><a href="cart.html"><img src="images/cart.png" alt="Go to cart"></a></li>
         </ul>
       </nav>
     </header>
+    <hr>
     <main>
-      <section class="container">
-        <h3>New releases</h3>
+      <section>
         <div>
-          <a class="cover"><img src="images/Hogwarts.png" alt="Hogwarts legacy cover photo"></a>
-          <a><img src="images/Hogwarts_1.png" alt="Gameplay image"></a>
-          <a><img src="images/Hogwarts_2.png" alt="Gameplay image2"></a>
-          <a><img src="images/Hogwarts_3.png" alt="Gameplay image3"></a>
-          <a><img src="images/Hogwarts_4.png" alt="Gameplay image4"></a>
-          <button>add to Cart</button>
-    <p>Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of your own adventure in the wizarding world.</p>
-  </div>
-</section>
-<section class="top-sellers">
-  <h3>Top Sellers</h3>
-<div>
-  <a href="products/game.html"><button>More info</button><img src="images/God of war.png" alt="God of war cover photo"></a>
-  <a href="products/game.html"><button>More info</button><img src="images/Horizon.png" alt="Horizon forbidden west cover photo"></a>
-  <a href="products/game.html"><button>More info</button><img src="images/Cyberpunk2077.png" alt="Cyberpunk 2077 cover photot"></a>
-</div>
-</section>
-<section class="all-games">
-  <h3>All games</h3>
-  <div>
-
-  </div>
-</section>
-<section>
-  <h3>Sell your old games</h3>
-  <p>If you want to sell your old games just fill out this form: </p>
-  <form class="form">
-    <input type="text" name="Game title" placeholder="Game title"/>
-    <input type="text" name="First and last name" placeholder="Your name"/>
-    <input type="email" name="email" placeholder="Email"/>
-    <input type="tel" name="Phone number" placeholder="Phone number"/>
-    <button>submitt</button>
-  </form>
-</section>
+          <h1>New releases</h1>
+          <div>
+            <img src="images/Hogwarts.png" alt="hogwarts legacy cover photo" class="hogwarts">
+          </div>
+          <div>
+            <p>Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of your own adventure in the wizarding world.</p>
+            <button>
+              <div>
+                <i>add to cart</i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="top-sellers">
+          <h2>Top sellers</h2>
+          <div>
+            <img src="images/God of war.png" alt="God of war" class="top-seller_images">
+            <button>More info</button>
+          </div>
+          <div>
+            <img src="images/Horizon.png" alt="Horizon forbidden west" class="top-seller_images">
+            <button>More info</button>
+          </div>
+          <div>
+            <img src="images/Cyberpunk2077.png" alt="Cyberpunk2077" class="top-seller_images">
+            <button>More info</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="all-games">
+          <h2>All games</h2>
+          <div>
+            <img src="images/Hogwarts_ps.png" alt="Game" class="all-games_photos">
+            <button>75$ <img src="images/add to cart gray.png"></button>
+          </div>
+          <div>
+            <img src="images/Horizon_ps.png" alt="Game" class="all-games_photos">
+            <button>75$ <img src="images/add to cart gray.png"></button>
+          </div>
+          <div>
+            <img src="images/Gow.png" alt="Game" class="all-games_photos">
+            <button>75$ <img src="images/add to cart gray.png"></button>
+          </div>
+          <div>
+            <img src="images/ER.png" alt="Game" class="all-games_photos">
+            <button>75$ <img src="images/add to cart gray.png"></button>
+          </div>
+          <div>
+            <img src="images/TLOU.png" alt="Game" class="all-games_photos">
+            <button>75$ <img src="images/add to cart gray.png"></button>
+          </div>
+          <div>
+            <img src="images/Hades.png" alt="Game" class="all-games_photos">
+            <button>75$ <img src="images/add to cart gray.png"></button>
+          </div>
+          <div>
+            <img src="images/Jedi.png" alt="Game" class="all-games_photos">
+            <button>75$ <img src="images/add to cart gray.png"></button>
+          </div>
+          <div>
+            <img src="images/Cult.png" alt="Game" class="all-games_photos">
+            <button>75$ <img src="images/add to cart gray.png"></button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>Sell your old games</h2>
+          <p>If you want to sell your old games just fill out this form:</p>
+          <form>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="EmailS"/>
+            <label for="phonenumber">Phone number</label>
+            <input type="text" id="number" name="number"/>
+            <label for="text">Game title</label>
+            <input type="text" id="Game title" name="game title" />
+            <input type="submit" value="Send Now" />
+          </form>
+          <div>
+            <img src="images/ps5 controller.png" alt="controller">
+          </div>
+        </div>
+      </section>
+      <hr>
     </main>
     <footer>Game hub</footer>
   </body>

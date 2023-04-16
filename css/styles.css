@@ -1,12 +1,53 @@
 body {
-    font-family: "Roboto";
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, h2{
+header {
+    display: flex;
+    align-items: center;
+}
 
+nav {
+    margin-left: 25px;
+}
+
+nav ul {
+    padding: 0px;
 }
 
 nav li {
     display: inline-block;
-    padding: 0px;
+}
+
+footer {
+    text-align: center
+}
+
+.hogwarts {
+    border-radius: 100px;
+}
+
+.top-sellers {
+    max-width: 1000px;
+    display: flex;
+}
+
+.top-sellers > * {
+    flex: 1;
+}
+
+.top-seller_images {
+    border-radius: 100px;
+    width: 100%;
+}
+
+.all-games_photos {
+    border-radius: 10px;
+    width: 10%;
+}
+
+
+/*links*/
+a {
+    text-decoration: none;
 }
