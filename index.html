@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <a href="index.html">Game hub <br>The universe of games</a>
+      <a href="index.html"> <img src="images/Logo.png" alt="Game hub logo" class="logo"> </a>
       <nav>
         <ul>
           <li><input type="text" placeholder="Search.."></li>
@@ -23,73 +23,72 @@
     </header>
     <hr>
     <main>
-      <section>
+      <section class="new-releases">
         <div>
           <h1>New releases</h1>
+          <div class="border">
           <div>
             <img src="images/Hogwarts.png" alt="hogwarts legacy cover photo" class="hogwarts">
           </div>
-          <div>
+          <div class="hogwarts-text">
             <p>Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of your own adventure in the wizarding world.</p>
-            <button>
-              <div>
-                <i>add to cart</i>
-              </div>
-            </button>
+            <div class="cart-button">
+            <a href="cart.html"><button>Add to cart</button></a>
           </div>
         </div>
+          </div>
       </section>
       <section>
         <div class="top-sellers">
           <h2>Top sellers</h2>
-          <div>
+          <div class="top-sellers_content">
             <img src="images/God of war.png" alt="God of war" class="top-seller_images">
-            <button>More info</button>
+            <a href="products/game.html"><button>More info</button></a>
           </div>
           <div>
             <img src="images/Horizon.png" alt="Horizon forbidden west" class="top-seller_images">
-            <button>More info</button>
+            <a href="products/game.html"><button>More info</button></a>
           </div>
           <div>
             <img src="images/Cyberpunk2077.png" alt="Cyberpunk2077" class="top-seller_images">
-            <button>More info</button>
+            <a href="products/game.html"><button>More info</button></a>
           </div>
-        </div>
+          </div>
       </section>
       <section>
         <div class="all-games">
           <h2>All games</h2>
           <div>
             <img src="images/Hogwarts_ps.png" alt="Game" class="all-games_photos">
-            <button>75$ <img src="images/add to cart gray.png"></button>
+            <a href="cart.html"><button>75$ <img src="images/add to cart gray.png"></button></a>
           </div>
           <div>
             <img src="images/Horizon_ps.png" alt="Game" class="all-games_photos">
-            <button>75$ <img src="images/add to cart gray.png"></button>
+            <a href="cart.html"><button>75$ <img src="images/add to cart gray.png"></button></a>
           </div>
           <div>
             <img src="images/Gow.png" alt="Game" class="all-games_photos">
-            <button>75$ <img src="images/add to cart gray.png"></button>
+            <a href="cart.html"><button>75$ <img src="images/add to cart gray.png"></button></a>
           </div>
           <div>
             <img src="images/ER.png" alt="Game" class="all-games_photos">
-            <button>75$ <img src="images/add to cart gray.png"></button>
+            <a href="cart.html"><button>75$ <img src="images/add to cart gray.png"></button></a>
           </div>
           <div>
             <img src="images/TLOU.png" alt="Game" class="all-games_photos">
-            <button>75$ <img src="images/add to cart gray.png"></button>
+            <a href="cart.html"><button>75$ <img src="images/add to cart gray.png"></button></a>
           </div>
           <div>
             <img src="images/Hades.png" alt="Game" class="all-games_photos">
-            <button>75$ <img src="images/add to cart gray.png"></button>
+            <a href="cart.html"><button>75$ <img src="images/add to cart gray.png"></button></a>
           </div>
           <div>
             <img src="images/Jedi.png" alt="Game" class="all-games_photos">
-            <button>75$ <img src="images/add to cart gray.png"></button>
+            <a href="cart.html"><button>75$ <img src="images/add to cart gray.png"></button></a>
           </div>
           <div>
             <img src="images/Cult.png" alt="Game" class="all-games_photos">
-            <button>75$ <img src="images/add to cart gray.png"></button>
+            <a href="cart.html"><button>75$ <img src="images/add to cart gray.png"></button></a>
           </div>
         </div>
       </section>
@@ -98,14 +97,14 @@
           <h2>Sell your old games</h2>
           <p>If you want to sell your old games just fill out this form:</p>
           <form>
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="EmailS"/>
-            <label for="phonenumber">Phone number</label>
-            <input type="text" id="number" name="number"/>
-            <label for="text">Game title</label>
-            <input type="text" id="Game title" name="game title" />
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Full name" />
+            <label for="email"></label>
+            <input type="email" id="email" name="EmailS" placeholder="Email"/>
+            <label for="phonenumber"></label>
+            <input type="text" id="number" name="number" placeholder="Phone number"/>
+            <label for="text"></label>
+            <input type="text" id="Game title" name="game title" placeholder="Game title"/>
             <input type="submit" value="Send Now" />
           </form>
           <div>
@@ -114,7 +113,60 @@
         </div>
       </section>
       <hr>
+      <section>
+        <div class="payment">
+          <h3>Payment methods:</h3>
+          <div>
+            <img src="images/Visa.png" alt="Payment method">
+          </div>
+          <div>
+            <img src="images/Mastercard.png" alt="Payment method">
+          </div>
+          <div>
+            <img src="images/PayPal.png" alt="Payment method">
+          </div>
+          <div>
+            <img src="images/GooglePay.png" alt="Payment method">
+          </div>
+          <div>
+            <img src="images/ApplePay.png" alt="Payment method">
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>Game hub</footer>
+    <footer>
+      <div class="footer">
+      <div>
+        <p>Game hub</p>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+        <p>Careers</p>
+        <p>Reliability</p>
+      </div>
+      <div>
+        <p>Cooperation</p>
+        <p>Partnership</p>
+        <p>Affiliate program</p>
+        <p>Reviewes</p>
+      </div>
+      <div>
+        <p>For buyers</p>
+        <p>Buyer support</p>
+        <p>How to buy</p>
+        <p>stay safe</p>
+      </div>
+      <div>
+        <p>For sellers</p>
+        <p>Sellers support</p>
+        <p>How to sell</p>
+        <p>Business center</p>
+      </div>
+      <div>
+        <p>User termes & privacy</p>
+        <p>Terms & conditions</p>
+        <p>Privacy & Cookies</p>
+      </div>
+    </div>
+    </footer>
   </body>
 </html>
