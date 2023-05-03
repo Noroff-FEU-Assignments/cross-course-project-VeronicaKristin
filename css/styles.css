@@ -1,181 +1,392 @@
 body {
-    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #11001C;
-}
-
-header {
-    display: flex;
-    align-items: center;
+	font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #11001c;
+	margin: 0;
 }
 
 h1,
 h2,
 h3,
 p {
-    color: #d9d9d9;
+	color: #d9d9d9;
 }
 
-.logo {
-    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+a {
+	transition: background-color 0.25s;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 15px;
 }
 
-nav {
-    margin-left: 25px;
+a:hover {
+	background: rgba(255, 255, 255, 0.1);
 }
 
-nav ul {
-    padding: 0px;
-}
-
-nav li {
-    display: inline-block;
-}
-
-footer {
-    text-align: center;
-    background-color: #d9d9d9;
-}
-
-
-/*home page*/
-.new-releases {
-    margin: 50px auto;
-}
-
-.new-releases {
-    max-width: 1000px;
-    display: flex;
-}
-
-.new-releases > * {
-    flex: 1;
-}
-
-.hogwarts {
-    border-radius: 100px;
-    width: 100%;
-}
-
+/* Common */
 .border {
-    border: 2px solid #d9d9d9;
-    border-radius: 100px;
-    padding: 20px;
+	border: 3px solid #d9d9d9;
+	border-radius: 40px;
+	overflow: hidden;
+}
+
+button:hover {
+	background: rgba(255, 255, 255, 0.5);
 }
 
 button {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #11001C;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
+	border: 0;
+	line-height: 2.5;
+	padding: 0 20px;
+	font-size: 1rem;
+	text-align: center;
+	color: #11001c;
+	text-shadow: 1px 1px 1px #000;
+	border-radius: 10px;
+	transition: background-color 0.2s;
+	cursor: pointer;
 }
 
-.top-sellers {
-    text-align: center;
-    padding: 50px;
-}
-.top-sellers {
-    margin: 50px auto;
+/* Top bar */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100px;
+	padding: 5px;
+	border-bottom: 2px solid #d9d9d9;
 }
 
-.top-sellers {
-    max-width: 1000px;
-    display: flex;
+.site-logo {
+	margin: 5px 15px 0;
+}
+
+.site-logo img {
+	height: 100px;
+}
+
+.logo {
+	font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+	margin: 0 25px 10px;
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+}
+
+nav,
+#menu-checkbox {
+	display: none;
+}
+
+header {
+	position: relative;
+}
+
+nav {
+	background: #d9d9d9;
+}
+
+.fa-bars {
+	color: #d9d9d9;
+}
+
+#menu-checkbox:checked ~ nav {
+	display: block;
+}
+
+nav nav a {
+	display: block;
+}
+
+.profile-button {
+	margin: 0 25px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+.profile-button img {
+	margin-right: 12px;
+	height: 50px;
+}
+
+.search-container {
+	min-width: 300px;
+	display: flex;
+	align-items: center;
+	background: white;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 0 5px;
+	margin-bottom: 5px;
+}
+.search-container img {
+	height: 25px;
+}
+.search-input {
+	height: 40px;
+	flex: 1;
+	border: 0;
+	margin-left: 5px;
+}
+.search-container input:focus {
+	border: none;
+	outline: none;
+}
+
+.cart-button {
+	margin: 0;
+}
+.cart-button img {
+	height: 50px;
+}
+
+footer {
+	text-align: center;
+	background-color: #d9d9d9;
+}
+
+/*home page*/
+main {
+	margin: 0 35px;
+}
+
+.new-releases {
+	display: flex;
+	width: 100%;
+}
+.new-releases > * {
+	flex: 1;
+}
+
+.new-releases-content {
+	display: flex;
+	padding: 15px;
+}
+
+.new-releases-image {
+	position: relative;
+}
+.new-releases-image img {
+	border-radius: 40px;
+	width: 100%;
+}
+.new-releases-image .button-price {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+.button-price:hover {
+	background-color: unset;
+}
+.new-releases-text {
+	padding: 0 10px;
+}
+.new-releases-text p {
+	margin-block-start: 0;
 }
 
 .top-sellers > * {
-    flex: 1;
+	flex: 1;
+}
+.top-sellers h2 {
+	text-align: left;
 }
 
-.top-seller_images {
-    border-radius: 100px;
-    width: 100%;
-    height: 140px;
-    margin: 15px 0px 15px;
+.top-sellers_content {
+	display: flex;
+	justify-content: space-between;
 }
-    
+
+.top-seller-item {
+	margin: 0 15px;
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+	flex: 1;
+}
+.top-seller-item img {
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	width: 100%;
+	height: 140px;
+}
+
+.top-seller-button {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+
 .all-games {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;
-    grid-gap: 10px;
-    min-height: 400px;
+	width: 100%;
+}
+
+.all-games-content {
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+	grid-gap: 10px;
+	min-height: 400px;
+}
+
+.game-item {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 25px 15px;
+	align-items: center;
+	margin: 25px;
+}
+.game-item img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.sell-games {
+}
+
+.sell-games-content {
+	display: flex;
+}
+
+.sell-games-form {
+	width: 100%;
+}
+.sell-games-form form {
+	display: flex;
+	flex-direction: column;
+}
+.sell-games-form form input {
+	background: white;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+.sell-games-form form input[type='submit'] {
+	width: 33%;
+}
+.sell-games-content img {
+	width: 50%;
 }
 
 input {
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
 }
 
 /*about game*/
 .elden-ring {
-    margin: 50px auto;
+	margin: 50px auto;
 }
 
 .elden-ring {
-    max-width: 1000px;
-    display: flex;
+	max-width: 1000px;
+	display: flex;
 }
 
 .elden-ring > * {
-    flex: 1;
+	flex: 1;
 }
 
 .elden-ring_image {
-    border-radius: 100px;
-    width: 100%;
+	border-radius: 100px;
+	width: 100%;
 }
 
 /*About us */
 .about {
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
-    padding: 10px;
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
+	padding: 10px;
 }
 
 /*contact*/
 .contact {
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
-    padding: 10px;
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
+	padding: 10px;
 }
 
 /*links*/
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /*footer*/
 .payment {
-    max-width: 1000px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+	max-width: 1000px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 
-footer p, a {
-    color: #11001C;
-    display: block;
-    margin: 15px 0px 15px;
+footer p,
+footer a {
+	color: #11001c;
+	display: block;
+	margin: 15px 0px 15px;
 }
 
 .footer {
-    max-width: 1000px;
-    display: flex;
-    text-align: left;
+	max-width: 1000px;
+	display: flex;
+	text-align: left;
 }
 
 .footer > * {
-    flex: 1;
+	flex: 1;
 }
 
-@media (min-width: 600px) and (max-width: 1200px) { 
-    .top-sellers {
-        flex-direction: column;
-    }
+@media (max-width: 900px) {
+	.new-releases-content {
+		flex-direction: column;
+	}
+	.profile-button {
+		display: none;
+	}
+	.search-container {
+		display: none;
+	}
+	.all-games-content {
+		grid-template-columns: repeat(2, 50%);
+	}
+	.sell-games-content img {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.top-sellers_content {
+		flex-direction: column;
+	}
+	.top-seller-item {
+		margin: 15px 0;
+	}
+	.top-seller-item img {
+		height: 300px;
+	}
+	.all-games-content {
+		grid-template-columns: repeat(1, 100%);
+	}
+}
+
+@media (min-width: 600px) {
+	nav {
+		display: block;
+		position: static;
+	}
+
+	.hamburger-icon {
+		display: none;
+	}
+
+	nav a {
+		display: inline-block;
+	}
 }
 
 /*mostly used resorses on moodle. with a little help from w3schools.com*/
