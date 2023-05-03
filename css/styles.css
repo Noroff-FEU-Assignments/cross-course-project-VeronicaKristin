@@ -258,6 +258,7 @@ main {
 	display: flex;
 	flex-direction: column;
 }
+
 .sell-games-form form input {
 	background: white;
 	border-radius: 30px;
@@ -284,8 +285,13 @@ input {
 }
 
 .elden-ring {
-	max-width: 1000px;
 	display: flex;
+	max-width: 100%;
+}
+
+.eldenring-content {
+	display: flex;
+	padding: 15px;
 }
 
 .elden-ring > * {
@@ -295,6 +301,10 @@ input {
 .elden-ring_image {
 	border-radius: 100px;
 	width: 100%;
+}
+
+.elden-ring h1 {
+	text-align: center;
 }
 
 /*About us */
