@@ -307,6 +307,11 @@ input {
 	text-align: center;
 }
 
+.eldenring-text-content {
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+}
 /*About us */
 .about {
 	border-radius: 10px;
@@ -390,6 +395,10 @@ footer a {
 	}
 	.sell-games-content img {
 		display: none;
+	}
+
+	.eldenring-content {
+		flex-direction: column;
 	}
 }
 
