@@ -92,10 +92,6 @@ header {
 	display: none;
 }
 
-#menu-checkbox:checked ~ nav {
-	display: block;
-}
-
 nav a {
 	display: block;
 }
@@ -278,6 +274,7 @@ input {
 }
 
 /*about game*/
+
 .elden-ring {
 	margin: 50px auto;
 }
@@ -339,9 +336,17 @@ footer a {
 .footer > * {
 	flex: 1;
 }
+@media (min-width: 600px) {
+	nav a {
+		display: inline-block;
+	}
+	.hamburger-icon {
+		display: none;
+	}
+}
 
 @media (max-width: 900px) {
-	.hamburger {
+	.hamburger-icon {
 		display: flex;
 		margin-right: 50px;
 	}
@@ -349,6 +354,21 @@ footer a {
 	nav {
 		display: none;
 	}
+
+	#menu-checkbox:checked ~ nav {
+		display: flex;
+		position: fixed;
+		width: 100vw;
+		height: 250px;
+		top: 112px;
+		z-index: 1000;
+		background-color: #11001c;
+		margin: 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
 	.new-releases-content {
 		flex-direction: column;
 	}
@@ -373,16 +393,6 @@ footer a {
 	}
 	.all-games-content {
 		grid-template-columns: repeat(1, 100%);
-	}
-}
-
-@media (min-width: 600px) {
-	nav {
-		position: static;
-	}
-
-	nav a {
-		display: inline-block;
 	}
 }
 
