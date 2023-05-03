@@ -76,7 +76,6 @@ nav {
 	height: 100%;
 }
 
-nav,
 #menu-checkbox {
 	display: none;
 }
@@ -85,19 +84,19 @@ header {
 	position: relative;
 }
 
-nav {
-	background: #d9d9d9;
-}
-
 .fa-bars {
 	color: #d9d9d9;
+}
+
+.hamburger {
+	display: none;
 }
 
 #menu-checkbox:checked ~ nav {
 	display: block;
 }
 
-nav nav a {
+nav a {
 	display: block;
 }
 
@@ -342,15 +341,18 @@ footer a {
 }
 
 @media (max-width: 900px) {
+	.hamburger {
+		display: flex;
+		margin-right: 50px;
+	}
+
+	nav {
+		display: none;
+	}
 	.new-releases-content {
 		flex-direction: column;
 	}
-	.profile-button {
-		display: none;
-	}
-	.search-container {
-		display: none;
-	}
+
 	.all-games-content {
 		grid-template-columns: repeat(2, 50%);
 	}
@@ -376,12 +378,7 @@ footer a {
 
 @media (min-width: 600px) {
 	nav {
-		display: block;
 		position: static;
-	}
-
-	.hamburger-icon {
-		display: none;
 	}
 
 	nav a {
