@@ -357,6 +357,7 @@ footer a {
 .footer > * {
 	flex: 1;
 }
+
 @media (min-width: 600px) {
 	nav a {
 		display: inline-block;
