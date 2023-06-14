@@ -22,10 +22,6 @@ a:hover {
 	background: rgba(255, 255, 255, 0.1);
 }
 
-li {
-	color: #d9d9d9;
-}
-
 .visually-hidden {
 	display: none;
 }
@@ -320,14 +316,26 @@ input {
 }
 
 /*contact*/
+li {
+	color: #d9d9d9;
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	align-items: center;
+}
+
 .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	border-radius: 10px;
 	padding: 10px;
 }
 
 .contact-form {
 	display: flex;
-	flex-direction: ;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 /*links*/
