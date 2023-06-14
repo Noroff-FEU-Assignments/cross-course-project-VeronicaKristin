@@ -29,17 +29,22 @@
       <section class="contact">
       <div>
         <h1>Contact us</h1>
-        <p>If you want to sell your old games just fill out this form:</p>
-        <form>
-          <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Full name" />
-          <label for="email"></label>
-          <input type="email" id="email" name="EmailS" placeholder="Email"/>
-          <label for="phonenumber"></label>
-          <input type="text" id="number" name="number" placeholder="Phone number"/>
-          <label for="text"></label>
-          <input type="text" id="question" name="question" placeholder="question"/>
-          <input type="submit" value="Send Now" />
+        <p>If you want to contact us about something:</p>
+        <form class="contact-form">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+          </ul>
         </form>
         <div>
           <div>
@@ -52,7 +57,7 @@
     <section>
       <div class="payment">
         <div>
-          <h3>Payment methods:</h3>
+          <h2>Payment methods:</h2>
         </div>
         <div>
           <img src="images/Visa.png" alt="Payment method visa" />

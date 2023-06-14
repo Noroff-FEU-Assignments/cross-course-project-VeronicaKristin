@@ -248,9 +248,6 @@ main {
 	margin-bottom: 15px;
 }
 
-.sell-games {
-}
-
 .sell-games-content {
 	display: flex;
 }
@@ -328,6 +325,11 @@ input {
 	padding: 10px;
 }
 
+.contact-form {
+	display: flex;
+	flex-direction: ;
+}
+
 /*links*/
 a {
 	text-decoration: none;
@@ -341,6 +343,7 @@ a {
 	justify-content: space-between;
 	align-items: left;
 	gap: 5px;
+	padding: 1em;
 }
 
 footer p,
