@@ -26,6 +26,10 @@ li {
 	color: #d9d9d9;
 }
 
+.visually-hidden {
+	display: none;
+}
+
 /* Common */
 .border {
 	border: 3px solid #d9d9d9;
@@ -343,7 +347,16 @@ footer p,
 footer a {
 	color: #11001c;
 	display: block;
-	margin: 15px 0px 15px;
+	margin: 15px 15px 15px;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+footer {
+	margin-top: auto;
 }
 
 .footer {
@@ -351,7 +364,7 @@ footer a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	text-align: left;
+	text-align: center;
 }
 
 .footer > * {
@@ -419,6 +432,9 @@ footer a {
 	}
 	.all-games-content {
 		grid-template-columns: repeat(1, 100%);
+	}
+	.footer {
+		flex-wrap: wrap;
 	}
 }
 

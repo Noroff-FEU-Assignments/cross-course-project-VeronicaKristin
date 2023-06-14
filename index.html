@@ -15,10 +15,12 @@
 		<header>
 			<a href="index.html" class="site-logo"> <img src="images/Logo.png" alt="Game hub logo" class="logo" /> </a>
 			<input type="checkbox" id="menu-checkbox" />
-			<label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+			<label for="menu-checkbox" class="hamburger-icon"
+				><span class="visually-hidden">label for the input></span><i class="fas fa-bars"></i
+			></label>
 			<nav>
 				<div class="search-container">
-					<label for="search"><i class="fa fa-magnifying-glass"></i></label>
+					<label for="search"><span class="visually-hidden">label for the input></span><i class="fa fa-magnifying-glass"></i></label>
 					<input class="search-input" type="text" name="search" placeholder="Search.." />
 				</div>
 				<a class="profile-button"><img src="images/profile.png" alt="My profile image" />My profile</a>
@@ -111,12 +113,27 @@
 						<div class="sell-games-form">
 							<p>If you want to sell your old games just fill out this form:</p>
 							<form>
+								<label for="search"
+									><span class="visually-hidden">label for the input></span><i class="fa fa-magnifying-glass"></i
+								></label>
 								<label for="name"></label>
 								<input type="text" id="name" name="name" placeholder="Full name" />
+								<label for="search"
+									><span class="visually-hidden">label for the input></span><i class="fa fa-magnifying-glass"></i
+								></label>
+								<label for="search"
+									><span class="visually-hidden">label for the input></span><i class="fa fa-magnifying-glass"></i
+								></label>
 								<label for="email"></label>
 								<input type="email" id="email" name="EmailS" placeholder="Email" />
+								<label for="search"
+									><span class="visually-hidden">label for the input></span><i class="fa fa-magnifying-glass"></i
+								></label>
 								<label for="phonenumber"></label>
 								<input type="text" id="number" name="number" placeholder="Phone number" />
+								<label for="search"
+									><span class="visually-hidden">label for the input></span><i class="fa fa-magnifying-glass"></i
+								></label>
 								<label for="text"></label>
 								<input type="text" id="Game-title" name="game title" placeholder="Game title" />
 								<input type="submit" value="Send Now" />
