@@ -355,7 +355,8 @@ a {
 }
 
 footer p,
-footer a {
+footer a,
+footer h2 {
 	color: #11001c;
 	display: block;
 	margin: 15px 15px 15px;
