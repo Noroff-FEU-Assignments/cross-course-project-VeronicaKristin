@@ -29,7 +29,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 		product.appendChild(Object.assign(document.createElement("img"), { src: item.image, className: "all-games_photos", alt: item.title }));
 
-		product.appendChild(Object.assign(document.createElement("a"), { href: `/products/game.html?id=${item.id}`, innerHTML: `$${item.price}` }));
+		product.appendChild(
+			Object.assign(document.createElement("a"), {
+				href: `/products/game.html?id=${item.id}`,
+				innerHTML: `$${item.price}`,
+				style: "background: white",
+			})
+		);
 
 		productList.appendChild(product);
 	}
