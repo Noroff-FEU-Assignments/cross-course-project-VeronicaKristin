@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Buy and sell your videogames online at game hub" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/87ae537606.js" crossorigin="anonymous"></script>
+
+		<title>Game hub | Home</title>
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="site-logo"> <img src="images/Logo.png" alt="Game hub logo" class="logo" /> </a>
+			<input type="checkbox" id="menu-checkbox" />
+			<label for="menu-checkbox" class="hamburger-icon"
+				><span class="visually-hidden">label for the hamburger menu></span><i class="fas fa-bars"></i
+			></label>
+			<nav>
+				<div class="search-container">
+					<label for="search"><span class="visually-hidden">label for the search bar></span><i class="fa fa-magnifying-glass"></i> </label>
+					<input class="search-input" type="text" id="search" name="search" placeholder="Search.." />
+				</div>
+				<a class="profile-button"><img src="images/profile.png" alt="profile picture" />My profile</a>
+				<a class="cart-button" href="cart.html"><img src="images/cart.png" alt="Go to cart" /></a>
+			</nav>
+		</header>
+		<main>
+			<section class="new-releases">
+				<div>
+					<h1>New releases</h1>
+					<div class="new-releases-content border">
+						<div class="new-releases-image">
+							<img src="images/Hogwarts.png" alt="hogwarts legacy cover photo" class="hogwarts" />
+						</div>
+						<div class="new-releases-text">
+							<p>
+								Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of
+								your own adventure in the wizarding world.
+							</p>
+							<div class="cart-button">
+								<button onclick="window.location.href = 'cart.html'">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="top-sellers">
+					<h2>On Sale</h2>
+					<div class="top-sellers_content" id="on-sale-list">
+						<div class="lds-dual-ring"></div>
+					</div>
+				</div>
+			</section>
+			<section class="all-games_section">
+				<div class="all-games">
+					<h2>All games</h2>
+					<div class="all-games-content" id="product-list">
+						<div class="lds-dual-ring"></div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="sell-games">
+					<h2>Sell your old games</h2>
+					<div class="sell-games-content">
+						<div class="sell-games-form">
+							<p>If you want to sell your old games just fill out this form:</p>
+							<form>
+								<label for="name"><span class="visually-hidden">label for the name input></span></label>
+								<input type="text" id="name" name="name" placeholder="Full name" />
+								<label for="email"><span class="visually-hidden">label for the email input></span></label>
+								<input type="email" id="email" name="EmailS" placeholder="Email" />
+								<label for="number"><span class="visually-hidden">label for the phone number input></span></label>
+								<input type="text" id="number" name="number" placeholder="Phone number" />
+								<label for="Game-title"><span class="visually-hidden">label for the game title input></span></label>
+								<input type="text" id="Game-title" name="game title" placeholder="Game title" />
+								<button type="submit">Send Now</button>
+							</form>
+						</div>
+						<img src="images/ps5-controller.png" alt="controller" />
+					</div>
+				</div>
+			</section>
+			<hr />
+			<section>
+				<div class="payment">
+					<div>
+						<h3>Payment methods:</h3>
+					</div>
+					<div>
+						<img src="images/Visa.png" alt="Payment method visa" />
+
+						<img src="images/Mastercard.png" alt="Payment method mastercard" />
+
+						<img src="images/PayPal.png" alt="Payment method paypal" />
+
+						<img src="images/GooglePay.png" alt="Payment method google pay" />
+
+						<img src="images/ApplePay.png" alt="Payment method apple pay" />
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer">
+				<div>
+					<p>Game hub</p>
+					<a href="about.html">About us</a>
+					<a href="contact.html">Contact</a>
+					<p>Careers</p>
+					<p>Reliability</p>
+				</div>
+				<div>
+					<p>Cooperation</p>
+					<p>Partnership</p>
+					<p>Affiliate program</p>
+					<p>Reviews</p>
+				</div>
+				<div>
+					<p>For buyers</p>
+					<p>Buyer support</p>
+					<p>How to buy</p>
+					<p>stay safe</p>
+				</div>
+				<div>
+					<p>For sellers</p>
+					<p>Sellers support</p>
+					<p>How to sell</p>
+					<p>Business center</p>
+				</div>
+				<div>
+					<p>User terms & privacy</p>
+					<p>Terms & conditions</p>
+					<p>Privacy & Cookies</p>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/product-page.js" type="module"></script>
+		<script src="./js/script.js" type="module"></script>
+	</body>
+</html>

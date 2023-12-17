@@ -1,0 +1,481 @@
+body {
+	font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #11001c;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+	color: #d9d9d9;
+}
+
+a {
+	transition: background-color 0.25s;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+a:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.visually-hidden {
+	display: none;
+}
+
+/* Common */
+.border {
+	border: 3px solid #d9d9d9;
+	border-radius: 40px;
+	overflow: hidden;
+}
+
+button:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+button {
+	border: 0;
+	line-height: 2.5;
+	padding: 0 20px;
+	font-size: 1rem;
+	text-align: center;
+	color: #11001c;
+	text-shadow: 1px 1px 1px #000;
+	border-radius: 10px;
+	transition: background-color 0.2s;
+	cursor: pointer;
+}
+
+/* Top bar */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100px;
+	padding: 5px 0;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.site-logo {
+	margin: 5px 15px 0;
+}
+
+.site-logo img {
+	height: 100px;
+}
+
+.logo {
+	font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+	margin: 0 25px 10px;
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+}
+
+#menu-checkbox {
+	display: none;
+}
+
+header {
+	position: relative;
+}
+
+.fa-bars {
+	color: #d9d9d9;
+}
+
+.hamburger {
+	display: none;
+}
+
+nav a {
+	display: block;
+}
+
+.profile-button {
+	margin: 0 25px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+.profile-button img {
+	margin-right: 12px;
+	height: 50px;
+}
+
+.search-container {
+	min-width: 300px;
+	display: flex;
+	align-items: center;
+	background: white;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 0 5px;
+	margin-bottom: 5px;
+}
+.search-container img {
+	height: 25px;
+}
+.search-input {
+	height: 40px;
+	flex: 1;
+	border: 0;
+	margin-left: 5px;
+}
+.search-container input:focus {
+	border: none;
+	outline: none;
+}
+
+.cart-button {
+	margin: 0;
+}
+.cart-button img {
+	height: 50px;
+}
+
+footer {
+	text-align: center;
+	background-color: #d9d9d9;
+}
+
+/*home page*/
+main {
+	margin: 0 35px;
+}
+
+.new-releases {
+	display: flex;
+	width: 100%;
+}
+.new-releases > * {
+	flex: 1;
+}
+
+.new-releases-content {
+	display: flex;
+	padding: 15px;
+}
+
+.new-releases-image {
+	position: relative;
+}
+.new-releases-image img {
+	border-radius: 40px;
+	width: 100%;
+}
+.new-releases-image .button-price {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+.button-price:hover {
+	background-color: unset;
+}
+.new-releases-text {
+	padding: 0 10px;
+}
+.new-releases-text p {
+	margin-block-start: 0;
+}
+
+.top-sellers > * {
+	flex: 1;
+}
+.top-sellers h2 {
+	text-align: left;
+}
+
+.top-sellers_content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-seller-item {
+	margin: 0 15px;
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+	flex: 1;
+}
+.top-seller-item img {
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	width: 100%;
+	height: 140px;
+}
+
+.top-seller-button {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+
+.all-games {
+	width: 100%;
+}
+
+.all-games-content {
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+	grid-gap: 10px;
+	min-height: 400px;
+}
+
+.game-item {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 25px 15px;
+	align-items: center;
+	margin: 25px;
+}
+.game-item img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.sell-games-content {
+	display: flex;
+}
+
+.sell-games-form {
+	width: 100%;
+}
+.sell-games-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.sell-games-form form input {
+	background: white;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+.sell-games-form form input[type="submit"] {
+	width: 33%;
+}
+.sell-games-content img {
+	width: 50%;
+}
+
+input {
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
+}
+
+/*about game*/
+
+.elden-ring {
+	margin: 50px auto;
+}
+
+.elden-ring {
+	display: flex;
+	max-width: 100%;
+}
+
+.eldenring-content {
+	display: flex;
+	padding: 15px;
+}
+
+.elden-ring > * {
+	flex: 1;
+}
+
+.elden-ring_image {
+	border-radius: 50px;
+	width: 50%;
+}
+
+.elden-ring h1 {
+	text-align: center;
+}
+
+.eldenring-text-content {
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+}
+/*About us */
+.about {
+	border-radius: 10px;
+	padding: 10px;
+}
+
+/*contact*/
+li {
+	color: #d9d9d9;
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	align-items: center;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*links*/
+a {
+	text-decoration: none;
+}
+
+/*footer*/
+.payment {
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: left;
+	gap: 5px;
+	padding: 1em;
+}
+
+footer p,
+footer a,
+footer h2 {
+	color: #11001c;
+	display: block;
+	margin: 15px 15px 15px;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+footer {
+	margin-top: auto;
+}
+
+.footer {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.footer > * {
+	flex: 1;
+}
+
+.lds-dual-ring {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+.lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (min-width: 600px) {
+	nav a {
+		display: inline-block;
+	}
+	.hamburger-icon {
+		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.hamburger-icon {
+		display: flex;
+		margin-right: 50px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	#menu-checkbox:checked ~ nav {
+		display: flex;
+		position: fixed;
+		width: 100vw;
+		height: 250px;
+		top: 112px;
+		z-index: 1000;
+		background-color: #11001c;
+		margin: 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.new-releases-content {
+		flex-direction: column;
+	}
+
+	.all-games-content {
+		grid-template-columns: repeat(2, 50%);
+	}
+	.sell-games-content img {
+		display: none;
+	}
+
+	.eldenring-content {
+		flex-direction: column;
+	}
+	.elden-ring_image {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.top-sellers_content {
+		flex-direction: column;
+	}
+	.top-seller-item {
+		margin: 15px 0;
+	}
+	.top-seller-item img {
+		height: 300px;
+	}
+	.all-games-content {
+		grid-template-columns: repeat(1, 100%);
+	}
+	.footer {
+		flex-wrap: wrap;
+	}
+}
+
+/*mostly used resorses on moodle. with a little help from w3schools.com*/
