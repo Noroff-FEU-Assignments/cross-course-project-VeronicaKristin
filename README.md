@@ -1,12 +1,12 @@
-# Girls in gaming
+# Gamehub
 
-![image](/images/Project-exam-min.jpg)
+![image](/images/gamehub-min.jpg)
 
-Blog about girls in gaming
+Site for selling games
 
 ## Description
 
-This site is targeting mainly girls that are interested in gaming and everything surronding that.
+This site is targeting people interested in buying or selling video games.
 
 ## Built With
 
@@ -21,7 +21,7 @@ This site is targeting mainly girls that are interested in gaming and everything
 1. Clone the repo:
 
 ```bash
-git clone git@github.com/Noroff-FEU-Assignments/project-exam-1-VeronicaKristin.git
+git clone git@https://github.com/Noroff-FEU-Assignments/cross-course-project-VeronicaKristin.git
 ```
 
 ### Running
